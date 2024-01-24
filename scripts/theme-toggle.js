@@ -1,22 +1,32 @@
-const getStoredTheme = () => {
-    const storedTheme = window.localStorage.getItem('theme-preference');
+const THEME_KEY = "theme-preference";
+const THEME_OPTIONS = {
+    light: 'light', 
+    dark: 'dark'
+};
+const THEME_TOGGLE_ID = "theme-toggle";
 
-    if (storedTheme != null && storedTheme !== 'light' && storedTheme !== 'dark') {
-        window.localStorage.removeItem('theme-preference');
+const getStoredTheme = () => {
+    const storedTheme = window.localStorage.getItem(THEME_KEY);
+
+    if(storedTheme == null)
+        return null;
+
+    if (!Object.values(THEME_OPTIONS).some(x => x == storedTheme)) {
+        window.localStorage.removeItem(THEME_KEY);
         return null;
     }
 
     return storedTheme;
 }
 
-const themeToggle = document.getElementById('theme-toggle');
+const themeToggle = document.getElementById(THEME_TOGGLE_ID);
 
 themeToggle.addEventListener('change', event => {
     const preferredTheme = event.target.checked
-        ? "dark"
-        : "light";
+        ? THEME_OPTIONS.dark
+        : THEME_OPTIONS.light;
 
-    window.localStorage.setItem('theme-preference', preferredTheme);
+    window.localStorage.setItem(THEME_KEY, preferredTheme);
     document.body.dataset.preferredTheme = preferredTheme;
 });
 
@@ -27,9 +37,9 @@ if (storedThemePreference == null) {
 
     themeToggle.checked = !prefersLightTheme;
     document.body.dataset.preferredTheme = !prefersLightTheme
-        ? "dark"
-        : "light";
+        ? THEME_OPTIONS.dark
+        : THEME_OPTIONS.light;
 } else {
-    themeToggle.checked = storedThemePreference === 'dark';
+    themeToggle.checked = storedThemePreference === THEME_OPTIONS.dark;
     document.body.dataset.preferredTheme = storedThemePreference;
 }
