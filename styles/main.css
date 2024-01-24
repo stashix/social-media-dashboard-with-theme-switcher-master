@@ -256,6 +256,7 @@ label {
 .card:hover {
     cursor: pointer;
     background: var(--clr-card-background-hover);
+    transform: scale(1.025);
 }
 
 .card .icon {
@@ -303,8 +304,9 @@ label {
     inset: calc(-1 * var(--border-radius)) 0 0 0;
     z-index: -1;
     position: absolute;
-    height: 50%;
-    border-radius: var(--border-radius);
+    height: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
 }
 
 .card__highlight[data-social-type='facebook']::before {
