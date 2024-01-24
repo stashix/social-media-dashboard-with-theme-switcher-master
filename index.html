@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div class="raised-background"></div>
+  <header>
+    <div class="wrapper heading">
+      <div class="heading__info">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="heading__controls">
+        <label for="theme-toggle">Dark Mode</label>
+        <input type="checkbox" role="switch" id="theme-toggle" name="theme-toggle">
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <div class="card-grid">
+        <div class="card card__highlight" data-social-type="facebook">
+          <div class="eyebrow"><span class="icon"></span>@nathanf</div>
+          <div class="number">1987</div>
+          <div class="type">Followers</div>
+          <div class="trend trend--positive"><span class="trend-icon"></span>12 Today</div>
+        </div>
+
+        <div class="card card__highlight" data-social-type="twitter">
+          <div class="eyebrow"><span class="icon"></span>@nathanf</div>
+          <div class="number">1044</div>
+          <div class="type">Followers</div>
+          <div class="trend trend--positive"><span class="trend-icon"></span>99 Today</div>
+        </div>
+
+        <div class="card card__highlight" data-social-type="instagram">
+          <div class="eyebrow"><span class="icon"></span>@realnathanf</div>
+          <div class="number">11k</div>
+          <div class="type">Followers</div>
+          <div class="trend trend--positive"><span class="trend-icon"></span>1099 Today</div>
+        </div>
+
+        <div class="card card__highlight" data-social-type="youtube">
+          <div class="eyebrow"><span class="icon"></span>Nathan F.</div>
+          <div class="number">8239</div>
+          <div class="type">Subscribers</div>
+          <div class="trend trend--negative"><span class="trend-icon"></span>144 Today</div>
+        </div>
+      </div>
+      <h2>Overview - Today</h2>
+      <div class="card-grid">
+        <div class="card card__overview" data-social-type="facebook">
+          <h4>Page Views</h4>
+          <div class="icon"></div>
+          <div class="number">87</div>
+          <div class="trend trend--positive"><span class="trend-icon"></span>3%</div>
+        </div>
+
+        <div class="card card__overview" data-social-type="facebook">
+          <h4>Likes</h4>
+          <div class="icon"></div>
+          <div class="number">52</div>
+          <div class="trend trend--negative"><span class="trend-icon"></span>2%</div>
+        </div>
+        <div class="card card__overview" data-social-type="instagram">
+          <h4>Likes</h4>
+          <div class="icon"></div>
+          <div class="number">5462</div>
+          <div class="trend trend--positive"><span class="trend-icon"></span>2257%</div>
+        </div>
+        <div class="card card__overview" data-social-type="instagram">
+          <h4>Profile Views</h4>
+          <div class="icon"></div>
+          <div class="number">52k</div>
+          <div class="trend trend--positive"><span class="trend-icon"></span>1375%</div>
+        </div>
+        <div class="card card__overview" data-social-type="twitter">
+          <h4>Retweets</h4>
+          <div class="icon"></div>
+          <div class="number">117</div>
+          <div class="trend trend--positive"><span class="trend-icon"></span>303%</div>
+        </div>
+        <div class="card card__overview" data-social-type="twitter">
+          <h4>Likes</h4>
+          <div class="icon"></div>
+          <div class="number">507</div>
+          <div class="trend trend--positive"><span class="trend-icon"></span>553%</div>
+        </div>
+        <div class="card card__overview" data-social-type="youtube">
+          <h4>Likes</h4>
+          <div class="icon"></div>
+          <div class="number">107</div>
+          <div class="trend trend--negative"><span class="trend-icon"></span>19%</div>
+        </div>
+        <div class="card card__overview" data-social-type="youtube">
+          <h4>Total Views</h4>
+          <div class="icon"></div>
+          <div class="number">1407</div>
+          <div class="trend trend--negative"><span class="trend-icon"></span>12%</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="./scripts/theme-toggle.js" defer></script>
+</body>
+
+</html>
