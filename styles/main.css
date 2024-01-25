@@ -251,6 +251,7 @@ label {
     background: var(--clr-card-background);
     padding: 1.5rem;
     border-radius: var(--border-radius);
+    transition: transform 100ms;
 }
 
 .card:hover {
