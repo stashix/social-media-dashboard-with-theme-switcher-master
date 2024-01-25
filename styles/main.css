@@ -369,7 +369,7 @@ label {
     grid-template-rows: 1fr 1fr;
 }
 
-.card__overview h4 {
+.card__overview h3 {
     display: block;
     margin: 0;
     font-size: var(--fs-sm);
