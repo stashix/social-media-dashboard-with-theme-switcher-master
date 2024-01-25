@@ -228,7 +228,7 @@ label {
 }
 
 .trend--positive .trend-icon {
-    mask-image: url(/images/icon-up.svg);
+    mask-image: url(../images/icon-up.svg);
     background-color: var(--clr-lime-green);
 }
 
@@ -237,7 +237,7 @@ label {
 }
 
 .trend--negative .trend-icon {
-    mask-image: url(/images/icon-down.svg);
+    mask-image: url(../images/icon-down.svg);
     background-color: var(--clr-bright-red);
 }
 
@@ -271,22 +271,22 @@ label {
 }
 
 .card[data-social-type='facebook'] .icon {
-    mask-image: url(/images/icon-facebook.svg);
+    mask-image: url(../images/icon-facebook.svg);
     background: var(--clr-facebook);
 }
 
 .card[data-social-type='twitter'] .icon {
-    mask-image: url(/images/icon-twitter.svg);
+    mask-image: url(../images/icon-twitter.svg);
     background: var(--clr-twitter);
 }
 
 .card[data-social-type='instagram'] .icon {
-    mask-image: url(/images/icon-instagram.svg);
+    mask-image: url(../images/icon-instagram.svg);
     background: var(--clr-instagram);
 }
 
 .card[data-social-type='youtube'] .icon {
-    mask-image: url(/images/icon-youtube.svg);
+    mask-image: url(../images/icon-youtube.svg);
     background: var(--clr-youtube);
 }
 
