@@ -157,6 +157,7 @@ input:where([type="checkbox"][role="switch"])::before {
     position: absolute;
     top: 50%;
     left: 0rem;
+    transition: left 100ms;
     transform: translate(0, -50%);
     width: calc(var(--toggle-height) - var(--toggle-margin));
     height: calc(var(--toggle-height) - var(--toggle-margin));
@@ -166,8 +167,7 @@ input:where([type="checkbox"][role="switch"])::before {
 }
 
 input:where([type="checkbox"][role="switch"]):checked::before {
-    right:0rem;
-    left:auto;
+    left: calc(var(--toggle-width) / 2);
 }
 
 label {
